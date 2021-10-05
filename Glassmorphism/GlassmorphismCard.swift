@@ -40,6 +40,27 @@ struct GlassmorphismCard: View {
             // Shadow
                 .shadow(color: .black.opacity(0.1), radius: 5, x: -5, y: -5)
                 .shadow(color: .black.opacity(0.1), radius: 5, x: 5, y: 5)
+            
+            // Content
+            VStack {
+                Image(systemName: "sun.max")
+                    .font(.system(size: 75, weight: .thin))
+                
+                Text("18")
+                    .font(.system(size: 85, weight: .bold))
+                    .padding(.top)
+                    .overlay(
+                        Text("°C")
+                            .font(.title2)
+                            .foregroundColor(.white.opacity(0.7))
+                            .offset(x: 15, y: 20)
+                        , alignment: .topTrailing
+                    )
+                
+                Text("Cracow, Poland")
+                    .font(.title3)
+                    .foregroundColor(.white.opacity(0.4))
+            }
         }
         .frame(width: width / 1.7, height: 270)
     }
