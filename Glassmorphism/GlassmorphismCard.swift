@@ -36,6 +36,10 @@ struct GlassmorphismCard: View {
                         )
                         .padding(2)
                 )
+            
+            // Shadow
+                .shadow(color: .black.opacity(0.1), radius: 5, x: -5, y: -5)
+                .shadow(color: .black.opacity(0.1), radius: 5, x: 5, y: 5)
         }
         .frame(width: width / 1.7, height: 270)
     }
