@@ -66,6 +66,9 @@ struct Home: View {
             
             // Content
             VStack {
+                
+                Spacer()
+                
                 Text("Know Everything\nabout the weather.")
                     .font(.largeTitle)
                     .fontWeight(.bold)
@@ -74,6 +77,41 @@ struct Home: View {
                     .fontWeight(.semibold)
                     .kerning(1.1)
                     .padding(.top, 10)
+                
+                // Button
+                Button(action: {
+                    
+                }, label: {
+                    Text("Get Started")
+                        .font(.title3)
+                        .bold()
+                        .padding(.vertical, 22)
+                        .frame(maxWidth: .infinity)
+                        .background(
+                            .linearGradient(
+                                .init(
+                                    colors: [
+                                        Color("Button11"),
+                                        Color("Button12")
+                                    ]
+                                ),
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            ),
+                            in: RoundedRectangle(cornerRadius: 20)
+                        )
+                })
+                    .padding(.horizontal, 50)
+                    .padding(.vertical, 20)
+                
+                Button(action: {
+                    
+                }, label: {
+                    Text("Already have an account?")
+                        .fontWeight(.semibold)
+                        .foregroundColor(.gray)
+                })
+                    .padding(.bottom)
             }
             .foregroundColor(.white)
             .multilineTextAlignment(.center)
