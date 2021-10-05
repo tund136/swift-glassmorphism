@@ -12,6 +12,7 @@
 		AD4ED061270C4E7800B29009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4ED060270C4E7800B29009 /* Assets.xcassets */; };
 		AD4ED064270C4E7800B29009 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4ED063270C4E7800B29009 /* Preview Assets.xcassets */; };
 		AD4ED06B270C516700B29009 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4ED06A270C516700B29009 /* Home.swift */; };
+		AD4ED06D270C593900B29009 /* GlassmorphismCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4ED06C270C593900B29009 /* GlassmorphismCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		AD4ED060270C4E7800B29009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD4ED063270C4E7800B29009 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD4ED06A270C516700B29009 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		AD4ED06C270C593900B29009 /* GlassmorphismCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassmorphismCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				AD4ED05E270C4E7600B29009 /* ContentView.swift */,
 				AD4ED060270C4E7800B29009 /* Assets.xcassets */,
 				AD4ED062270C4E7800B29009 /* Preview Content */,
+				AD4ED06C270C593900B29009 /* GlassmorphismCard.swift */,
 			);
 			path = Glassmorphism;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD4ED05F270C4E7600B29009 /* ContentView.swift in Sources */,
+				AD4ED06D270C593900B29009 /* GlassmorphismCard.swift in Sources */,
 				AD4ED06B270C516700B29009 /* Home.swift in Sources */,
 				AD4ED05D270C4E7600B29009 /* GlassmorphismApp.swift in Sources */,
 			);

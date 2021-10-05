@@ -69,6 +69,11 @@ struct Home: View {
                 
                 Spacer()
                 
+                // Glassmorphism Card
+                GlassmorphismCard()
+                
+                Spacer()
+                
                 Text("Know Everything\nabout the weather.")
                     .font(.largeTitle)
                     .fontWeight(.bold)
