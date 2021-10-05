@@ -70,7 +70,22 @@ struct Home: View {
                 Spacer()
                 
                 // Glassmorphism Card
-                GlassmorphismCard()
+                ZStack {
+                    // Background Balls
+                    Circle()
+                        .fill(Color("Purple"))
+                        .blur(radius: 20)
+                        .frame(width: 100, height: 100)
+                        .offset(x: 120, y: -80)
+                    
+                    Circle()
+                        .fill(Color("LightBlue"))
+                        .blur(radius: 40)
+                        .frame(width: 100, height: 100)
+                        .offset(x: -120, y: 100)
+                    
+                    GlassmorphismCard()
+                }
                 
                 Spacer()
                 
