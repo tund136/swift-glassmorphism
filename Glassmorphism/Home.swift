@@ -70,13 +70,30 @@ struct Home: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                 
-                Text("Start now and learn more about\nlocal weather instantly.")
-                    .padding(.top)
+                Text(getAttributedString())
+                    .fontWeight(.semibold)
+                    .kerning(1.1)
+                    .padding(.top, 10)
             }
             .foregroundColor(.white)
             .multilineTextAlignment(.center)
             .padding()
         }
+    }
+    
+    // Going to use AttributesString from iOS 15
+    func getAttributedString() -> AttributedString {
+        var attStr = AttributedString("Start now and learn more about\nlocal weather instantly.")
+        
+        attStr.foregroundColor = .gray
+        
+        // Converting only 'local weather'
+        if let range = attStr.range(of: "local weather") {
+            // Changing into white
+            attStr[range].foregroundColor = .white
+        }
+        
+        return attStr
     }
 }
 
