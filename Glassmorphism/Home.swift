@@ -63,6 +63,19 @@ struct Home: View {
                 // Moving bottom
                     .offset(x: -size.width / 1.8, y: size.height / 2)
             }
+            
+            // Content
+            VStack {
+                Text("Know Everything\nabout the weather.")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                
+                Text("Start now and learn more about\nlocal weather instantly.")
+                    .padding(.top)
+            }
+            .foregroundColor(.white)
+            .multilineTextAlignment(.center)
+            .padding()
         }
     }
 }
