@@ -20,6 +20,22 @@ struct GlassmorphismCard: View {
                         .opacity(0.08)
                         .blur(radius: 10)
                 )
+            
+            // Strokes
+                .background(
+                    RoundedRectangle(cornerRadius: 25)
+                        .stroke(
+                            .linearGradient(.init(colors: [
+                                Color("Purple"),
+                                Color("Purle").opacity(0.5),
+                                .clear,
+                                .clear,
+                                Color("LightBlue")
+                            ]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                            , lineWidth: 2.5
+                        )
+                        .padding(2)
+                )
         }
         .frame(width: width / 1.7, height: 270)
     }
