@@ -1,2 +1,2 @@
 # Glassmorphism - SwiftUI
-![App UI](/intro.gif)
+![App UI](/intro.png)
